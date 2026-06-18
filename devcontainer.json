@@ -2,13 +2,8 @@
   "name": "TOLH Practice Computer",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
-  // Install the command-line tools the tasks rely on, then populate the home
-  // directory so it looks like a normal computer. Runs once when the Codespace
-  // is created (and again on a manual "Rebuild Container").
   "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tree bsdmainutils file gcc tar coreutils findutils && bash setup_computer.sh --reset",
 
-  // When a terminal opens, start in the student's home (their 'computer'),
-  // not in the repo folder.
   "customizations": {
     "vscode": {
       "settings": {
