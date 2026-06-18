@@ -2,7 +2,7 @@
   "name": "TOLH Practice Computer",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tree bsdmainutils file gcc tar coreutils findutils && bash setup_computer.sh --reset",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y tree bsdmainutils file gcc tar coreutils findutils man-db && yes | sudo unminimize && bash setup_computer.sh --reset",
 
   "customizations": {
     "vscode": {
